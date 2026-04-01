@@ -19,4 +19,5 @@ public class MediaItem
     public MovieMetadata? MovieMetadata { get; set; }
     public BookMetadata? BookMetadata { get; set; }
     public SeriesMetadata? SeriesMetadata { get; set; }
+    public MangaMetadata? MangaMetadata { get; set; }
 }

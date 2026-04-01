@@ -10,6 +10,5 @@ public record MediaItemDto(
     string? Description,
     DateTime? ReleaseDate,
     ICollection<Genre>? Genres,
-    double Rating,
-    IMetaData? MetaData
+    double Rating
 );

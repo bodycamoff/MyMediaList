@@ -1,11 +1,14 @@
-﻿using Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using Domain.Entities;
 using Domain.Enums;
 
 namespace Domain.Metadata;
 
-public class GameMetadata : IMetaData
+public class GameMetadata
 {
-    public Guid Id { get; set; }
+    
+    public Guid MediaItemId { get; set; }
+
     public MediaItem MediaItem { get; set; } = null!;
     public string Developer { get; set; } = string.Empty;
     public string Publisher { get; set; } = string.Empty;

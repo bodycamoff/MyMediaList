@@ -1,10 +1,12 @@
-﻿using Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using Domain.Entities;
 
 namespace Domain.Metadata;
 
-public class BookMetadata : IMetaData
+public class BookMetadata
 {
-    public Guid Id { get; init; }
+    
+    public Guid MediaItemId { get; set; }
     public MediaItem MediaItem { get; set; } = null!;
     public string Author { get; set; } = string.Empty;
     public string Publisher { get; set; } = string.Empty;

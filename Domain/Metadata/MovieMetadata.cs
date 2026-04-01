@@ -1,10 +1,12 @@
-﻿using Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using Domain.Entities;
 
 namespace Domain.Metadata;
 
-public class MovieMetadata : IMetaData
+public class MovieMetadata
 {
-    public Guid Id { get; set; }
+    public Guid MediaItemId { get; set; }
+
     public MediaItem MediaItem { get; set; } = null!;
     public string Director { get; set; } = string.Empty;
     public int DurationMinutes { get; set; }

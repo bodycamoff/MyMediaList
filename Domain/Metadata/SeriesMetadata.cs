@@ -1,11 +1,13 @@
-﻿using Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using Domain.Entities;
 using Domain.Enums;
 
 namespace Domain.Metadata;
 
-public class SeriesMetadata : IMetaData
+public class SeriesMetadata
 {
-    public Guid Id { get; set; }
+    public Guid MediaItemId { get; set; }
+
     public MediaItem MediaItem { get; set; } = null!;
     public int NumberOfEpisodes { get; set; }
     public int NumberOfSeasons { get; set; }
